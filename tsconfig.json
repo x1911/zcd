@@ -1,0 +1,38 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "outDir": "./build",
+    "rootDir": "./",
+    // "rootDir": "./server",
+    // "outFile": "./build/app.js",  // 只支持umd
+    "allowJs": true,  // 会检查 js造成打包错误
+    "checkJs": false,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,  // 大小写敏感
+    // "suppressImplicitAnyIndexErrors": true, // {}属性不报错 是否禁止隐式 any 类型索引错误
+    // "skipLibCheck": true,
+    // "skipDefaultLibCheck": true,
+    // "allowSyntheticDefaultImports": true,
+    "lib": [
+      // "ES6",
+      // "ES7",
+      "DOM",  // 不兼容node
+      // "DOM.Iterable",
+      // "ES2018"
+      "ESNext",
+      "ESNext.AsyncIterable",
+      "ESNext.Promise"
+    ],
+    "moduleResolution": "Node10", // Bundler用打包工具
+    "module": "ESNext",  // 影响代码提示和打包
+    // "module": "CommonJS",  
+    "target": "ESNext" // 影响代码提示和打包
+
+  },
+  // "include": [
+  //   "server", "../common"
+  // ],
+  "exclude": [
+    "node_modules", "build", "client"
+  ]
+}

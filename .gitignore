@@ -1,0 +1,23 @@
+# dir 不需要提交的目录
+/.vscode
+/node_modules
+/books
+/z_README
+
+
+# 原服务端
+/web_server
+
+​
+# file 不需要提交的文件
+/web_server/server/settings/Settings.js
+config.ini
+
+
+# log 不需要提交的任意包含后缀名为log的文件
+*.log
+​
+# Package Files 不需要提交的任意包含后缀名为jar的文件
+*.jar
+*.DS_Store
+*.meta
